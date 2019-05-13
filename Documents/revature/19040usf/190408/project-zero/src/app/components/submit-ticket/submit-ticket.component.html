@@ -1,0 +1,22 @@
+<div class="container">
+      <label>Amount</label>
+      <input type="text" id="amount" name="amount" [(ngModel)]="amount"  placeholder="Enter amount">
+
+      <label>Type</label>
+      <select id="Type" name="Type" [(ngModel)]="type_id">
+        <option value="1">Travel and Mileage Expenses</option>
+        <option value="2">Educational Expenses</option>
+        <option value="3">Business Supplies Expenses</option>
+        <option value="4">Other</option>
+      </select>
+
+      <label>Status</label>
+      <select id="Status" name="Status" [(ngModel)]="status">
+        <option value="3">Pending</option>
+      </select>
+
+      <label for="subject">Description:</label>
+      <textarea id="subject" name="subject"[(ngModel)]="description" placeholder="Please Write A Brief Description.." style="height:200px"></textarea>
+    <input type="submit" value="Submit" (click) = "submit()" >
+
+  </div>

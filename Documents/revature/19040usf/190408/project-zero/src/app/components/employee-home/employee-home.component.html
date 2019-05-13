@@ -1,0 +1,10 @@
+<div>
+  <h2>Employee Login</h2>
+<h3>Welcome {{name}}</h3>
+<h3>User Id: {{userId}}</h3>
+<h3>Role Id: {{role_id}}</h3>
+<button (click)="pastTickets()">View Past Tickets</button>
+<button (click)="submitReimbursements()">Submit Reimbursements</button>
+<button (click)="viewAllTickets()" *ngIf = "managerValid()">View All Tickets</button>
+<button (click)="updateReimbursements()" *ngIf = "managerValid()">Update Tickets</button>
+  </div>
